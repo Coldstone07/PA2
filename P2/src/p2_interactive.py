@@ -15,7 +15,9 @@ SUBSAMPLE = int(SUBSAMPLE)
 
 with open(MESH_FILENAME, 'rb') as f:
   mesh = pickle.load(f)
-
+  #print(mesh.keys())
+  #print(mesh['boxes'])
+  #print(mesh['adj'])
 master = tkinter.Tk()
 
 big_image = tkinter.PhotoImage(file=MAP_FILENAME)
